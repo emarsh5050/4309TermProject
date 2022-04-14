@@ -29,30 +29,57 @@
     .order-body{
         background-color: #F0F0F0;
     }
+
+   .order-entry{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: flex-end;
+    }
+
+    .order-item{
+        flex: 1;
+        padding:10px;
+    }
+
+    .order-quanity{
+        padding:10px;
+    }
+
+    .order-cost{
+        padding:10px;
+    }
+
+    .order-checkout-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
 /*end order sidebar*/
 
 /*collapsable styles*/
-    .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+        .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
     }
 
     .active, .collapsible:hover {
-    background-color: #555;
+        background-color: #555;
     }
 
     .content {
-    display: none;
-    overflow: hidden;
-    background-color: #F0F0F0;
-    font-family: 'Open Sans';
+        display: none;
+        overflow: hidden;
+        background-color: #F0F0F0;
+        font-family: 'Open Sans';
     }
 
     .entry{
@@ -104,6 +131,10 @@
 
     .menu-item .cost .order-button{
         padding: 20px;
+    }
+
+    .meat-by-the-pound{
+        background-image: url("../img/meat-by-the-pound.img");
     }
 /* end collapsable styles*/
 
