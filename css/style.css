@@ -389,3 +389,191 @@ text-align: center;
 }
 
 /* feature end */
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*end fonts*/
+
+/*wrappers*/
+.wrapper{
+        display:flex;
+    }
+
+    .menu-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .menu-wrapper-order{
+        padding: 20px;
+        width: 75%;
+    }
+
+/*end wrappers*/
+
+/*order sidebar*/
+    .order-sidebar{
+        margin-top: 54px;
+        width: 20%;
+    }
+
+    .order-body{
+        background-color: #F0F0F0;
+    }
+
+   .order-entry{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: flex-end;
+    }
+
+    .order-item{
+        flex: 1;
+        padding:10px;
+    }
+
+    .order-quanity{
+        padding:10px;
+    }
+
+    .order-cost{
+        padding:10px;
+    }
+
+    .order-checkout-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+/*end order sidebar*/
+
+/*collapsable styles*/
+        .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        display: none;
+        overflow: hidden;
+        background-color: #F0F0F0;
+        font-family: 'Open Sans';
+    }
+
+    .entry{
+        padding: 1.5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        text-align: right;
+    }
+
+    .menu-item{
+        flex: 1;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .order-button{
+        width: fit-content;
+    }
+
+    .cost{
+        width: fit-content;
+        padding-right: 5%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    }
+        
+    .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+    .menu-item .cost .order-button{
+        padding: 20px;
+    }
+
+    .meat-by-the-pound{
+        background-image: url("../img/meat-by-the-pound.img");
+    }
+/* end collapsable styles*/
+
+/*Text Styles*/
+    h2{
+        text-align: center;
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 67px;
+        line-height: 120%;
+    }
+
+    h3{
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+    }
+/*end Text Styles*/
+    
+
+/*button styles*/
+
+    .btn-primary {
+        background-color: #D16E28;
+        border-color: #D16E28;
+        color: #f3f3f3;
+        font-weight: 700;
+        font-family: 'Open Sans Condensed', sans-serif;
+        box-shadow: 0px 0px .5em .3em rgba(0, 0, 0, 0.5);
+    }
+    .btn-primary:hover {
+        border-color: #D16E28;
+        background-color: #f3f3f3;
+        color: #D16E28;
+    }
+    .btn-secondary {
+        background-color: #af5e50;
+        color: #f3f3f3;
+        font-weight: 700;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    .btn-secondary:hover {
+        border-color: #af5e50;
+        background-color: #f3f3f3;
+        color: #af5e50;
+    }
+/*end button styles*/
