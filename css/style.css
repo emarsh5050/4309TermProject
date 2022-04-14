@@ -1,6 +1,35 @@
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*end fonts*/
+
+/*wrappers*/
+.wrapper{
+        display:flex;
+    }
+
+    .menu-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .menu-wrapper-order{
+        padding: 20px;
+        width: 75%;
+    }
+
+/*end wrappers*/
+
+/*order sidebar*/
+    .order-sidebar{
+        margin-top: 54px;
+        width: 20%;
+    }
+
+    .order-body{
+        background-color: #F0F0F0;
+    }
+/*end order sidebar*/
 
 /*collapsable styles*/
     .collapsible {
@@ -20,22 +49,28 @@
     }
 
     .content {
-    padding: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
     display: none;
     overflow: hidden;
     background-color: #F0F0F0;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: baseline;
-    text-align: right;
+    font-family: 'Open Sans';
+    }
+
+    .entry{
+        padding: 1.5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        text-align: right;
     }
 
     .menu-item{
-        width:80%;
+        flex: 1;
         text-align: left;
-        font-family:'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -48,7 +83,11 @@
 
     .cost{
         width: fit-content;
-        padding-right: 20px;
+        padding-right: 5%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
     }
 
     .collapsible:after {
@@ -69,22 +108,39 @@
 /* end collapsable styles*/
 
 /*Text Styles*/
+    h2{
+        text-align: center;
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 67px;
+        line-height: 120%;
+    }
+
+    h3{
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+    }
+/*end Text Styles*/
     
 
 /*button styles*/
 
     .btn-primary {
-        background-color: #558086;
-        border-color: none;
+        background-color: #D16E28;
+        border-color: #D16E28;
         color: #f3f3f3;
-        border-color: #f3f3f3;
         font-weight: 700;
         font-family: 'Open Sans Condensed', sans-serif;
+        box-shadow: 0px 0px .5em .3em rgba(0, 0, 0, 0.5);
     }
     .btn-primary:hover {
-        border-color: #558086;
+        border-color: #D16E28;
         background-color: #f3f3f3;
-        color: #558086;
+        color: #D16E28;
     }
     .btn-secondary {
         background-color: #af5e50;
