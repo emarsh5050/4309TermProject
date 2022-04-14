@@ -1,1 +1,391 @@
+/* 
+    Name: Courtney McDonald & Emma Marshall
+    Project: David's Barbeque
+    Date: Spring 2022
+*/
 
+/* basic styling start */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    font-size: 18px;
+    --primary: #d16e28;
+    --secondary: #b33424;
+    --dark: #373435;
+    --white: #ffffff;
+    --light: #ededed;
+    --medium: #737373;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--dark);
+    font-weight: 400;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    font-family: 'Alfa Slab One', serif;
+    line-height: 1.25em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: var(--dark);
+    letter-spacing: 0.075rem;
+    text-align: center;
+}
+
+h1, .h1 {
+    font-size: 51px;
+}
+
+h2, .h2 {
+    font-size: 34px;
+}
+
+h3, .h3 {
+    font-size: 24px;
+}
+
+h4, .h4 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+.gradient-t2b, .gradient-b2t, .dark-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.gradient-t2b {
+    background-image: linear-gradient(var(--dark), transparent);
+}
+
+.gradient-b2t {
+    background-image: linear-gradient(transparent, var(--dark));
+}
+
+.dark-hover:hover {
+    background-color: var(--dark);
+    opacity: 0.5;
+}
+
+@media only screen and (min-width: 576px) {
+    html {
+      font-size: 20px;
+    }
+
+    h1, .h1 {
+        font-size: 67px;
+    }
+
+    h2, .h2 {
+        font-size: 51px;
+    }
+
+    h3, .h3 {
+        font-size: 34px;
+    }
+
+    h4, .h4 {
+        font-size: 24px;
+    }
+}
+
+/* basic styling end */
+
+/* links and buttons start */
+
+a:link, a:active, a:visited {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+a.btn-primary, a.btn-secondary {
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 7px;
+    filter: drop-shadow(0 0 10px var(--medium));
+    font-size: 1.15rem;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+}
+
+a.btn-primary:hover, a.btn-secondary:hover {
+    text-decoration: none;
+}
+
+a.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+a.btn-secondary {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active, a.btn-secondary:hover, a.btn-secondary:focus, a.btn-secondary:active {
+    background-color: var(--secondary);
+    border: 1px solid transparent;
+    color: var(--white);
+}
+
+/* links and buttons end */
+
+/* header start */
+
+div.headernav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    width: 100%;
+    padding: 10px;
+}
+
+div.headernav img {
+    height: 39px;
+    width: auto;
+}
+
+div.headernav i {
+    color: var(--white);
+    position: absolute;
+    top: 14.75px;
+    right: 14.75px;
+    font-size: 30px;
+}
+
+div.headernav.home {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+/* header end */
+
+/* hero start */
+
+.hero-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-container img, .hero-container div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.hero-container h1 {
+    color: var(--white);
+}
+
+.hero-container a.btn-primary {
+    position: absolute;
+    bottom: -35px;
+}
+
+/* hero end */
+
+/* button block start */
+
+.btn-block-container {
+    margin-bottom: 40px;
+}
+
+.btn-block {
+    width: 100%;
+    height: 237px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.btn-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 7px;
+}
+
+.btn-block p {
+    color: white;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+.btn-block .gradient-b2t, .btn-block .dark-hover {
+    border-radius: 7px;
+}
+
+.btn-block:hover {
+    text-decoration: none;
+}
+
+.btn-block div:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527)) 
+}
+
+@media only screen and (min-width: 992px) {
+    .btn-block {
+        width: calc(calc(100% - 40px) / 3);
+    }
+
+    .btn-block-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .btn-block p {
+        font-size: 38px;
+    }
+}
+
+/* button block end */
+
+/* calendar start */
+
+.calendar-container {
+    margin-bottom: 40px;
+}
+
+.event-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 20px 0;
+}
+
+.event-container .event-day {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 20px 0;
+}
+
+.event-container .event-day p {
+    margin: 0;
+}
+
+.event-container .event-day p span {
+    font-size: 55px;
+    line-height: 65px;
+}
+
+.event-container .event-info {
+    background-color: var(--light);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 70%;
+    padding: 20px;
+}
+
+.event-container .event-info p {
+    margin: 0;
+}
+
+.event-container .event-info p.event-name {
+    font-weight: 700;
+}
+
+.event-container .event-info p.event-time {
+    margin: 20px 0 10px 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .event-container {
+        width: calc(calc(100% - 20px) / 2);
+    }
+
+    .calendar-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+/* calendar end */
+
+/* feature start */
+
+.feature-container {
+    width: 100%;
+    height: 415px;
+}
+
+.feature-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.feature-container h3 {
+    color: var(--white);
+    padding: 40px;
+}
+
+.feature-container a.btn-primary {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+text-align: center;
+}
+
+/* feature end */
