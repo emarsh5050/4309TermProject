@@ -12,4 +12,16 @@
         content.style.display = "block";
         }
     });
+
+    function changeStyleNone(){
+        var element = document.getElementById("sidebar");
+        element.style.display = "none";
+    }    
+    
+    function changeStyleBlock(){
+        var element = document.getElementById("sidebar");
+        element.style.display = "block";
+    }
+
+
     }

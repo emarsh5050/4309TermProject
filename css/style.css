@@ -406,16 +406,20 @@ text-align: center;
     }
 
     .menu-wrapper-order{
+        flex: 1;
         padding: 20px;
-        width: 75%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 /*end wrappers*/
 
 /*order sidebar*/
     .order-sidebar{
+        margin-right: 5%;
         margin-top: 54px;
         width: 20%;
+        display: none;
     }
 
     .order-body{
@@ -451,8 +455,7 @@ text-align: center;
 /*end order sidebar*/
 
 /*collapsable styles*/
-        .collapsible {
-        background-color: #777;
+    .collapsible {
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -461,6 +464,7 @@ text-align: center;
         text-align: left;
         outline: none;
         font-size: 15px;
+        margin: 10px;
     }
 
     .active, .collapsible:hover {
@@ -470,16 +474,13 @@ text-align: center;
     .content {
         display: none;
         overflow: hidden;
-        background-color: #F0F0F0;
         font-family: 'Open Sans';
     }
 
     .entry{
         padding: 1.5%;
-        padding-left: 10%;
-        padding-right: 10%;
         display: flex;
-        width: 100%;
+        width: auto;
         justify-content: flex-end;
         flex-direction: row;
         flex-wrap: wrap;
@@ -525,8 +526,40 @@ text-align: center;
         padding: 20px;
     }
 
-    .meat-by-the-pound{
-        background-image: url("../img/meat-by-the-pound.img");
+    .meat-by-the-lb{
+        background-image: url(../img/meat-by-the-pound.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .vegetables{
+        background-image: url(../img/potatoSalad.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .sides{
+        background-image: url(../img/bread.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
     }
 /* end collapsable styles*/
 
@@ -547,6 +580,7 @@ text-align: center;
         font-size: 38px;
         line-height: 120%;
     }
+
 /*end Text Styles*/
     
 
@@ -576,4 +610,3 @@ text-align: center;
         background-color: #f3f3f3;
         color: #af5e50;
     }
-/*end button styles*/
