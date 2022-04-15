@@ -692,3 +692,46 @@ p.social-icons {
         line-height: 120%;
     }
 /* end collapsable styles*/
+
+/* our story image container start */
+
+.our-story-img {
+    filter: drop-shadow(0 0 10px var(--medium));
+    border-radius: 7px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 85%;
+    z-index: 1;
+}
+
+.our-story-quote {
+    margin-top: 20px;
+    color: var(--white);
+    width: 85%;
+}
+
+.our-story-quote span p {
+    text-align: right;
+}
+
+.our-story-container {
+    margin: 20px 0;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-story-quote-background {
+    background-color: var(--primary);
+    border-radius: 7px;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    height: 75%;
+    width: 100%;
+    filter: drop-shadow(0 0 10px var(--medium));
+}
+
+/* our story image container end */
