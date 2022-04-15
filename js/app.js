@@ -11,7 +11,8 @@
         } else {
         content.style.display = "block";
         }
-    });
+    }); 
+    }
 
     function changeStyleNone(){
         var element = document.getElementById("sidebar");
@@ -23,5 +24,14 @@
         element.style.display = "block";
     }
 
-
+    function changeStyle(){
+        var content = document.getElementById("main-navigation");
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
     }
+    
+
+
