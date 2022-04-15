@@ -553,7 +553,7 @@ p.social-icons {
     }
 
     .order-body{
-        background-color: #F0F0F0;
+        background-color: var(--light);
     }
 
    .order-entry{
