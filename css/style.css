@@ -611,6 +611,12 @@ p.social-icons {
 /* email newsletter end */
 
 /*wrappers*/
+.rect{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--dark);
+}
+
 .wrapper{
         display:flex;
     }
