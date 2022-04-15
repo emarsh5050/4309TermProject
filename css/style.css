@@ -219,3 +219,9 @@
         color: #af5e50;
     }
 /*end button styles*/
+
+/*footer styles*/
+.adress{
+    display: flex;
+    padding: 10px;
+}
