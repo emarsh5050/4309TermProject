@@ -25,48 +25,94 @@
                 <button type="button" class="collapsible meat-by-the-lb">Meats by the pound</button>
                 <div class="content">
                     <div class="entry-container">
-                        <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <p class="cost">$16.75</p>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
-                        <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <div class="cost"><p>$16.75</p></div>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
+                       <div class="entry">
+                <div class="menu-item"><p>Beef Brisket</p></div>
+                <div class="cost"><p>$18.99</p></div>
+                <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Pork Ribs</p></div>
+                    <div class="cost"><p>$15.99</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Turkey Breast</p></div>
+                    <div class="cost"><p>$12.99</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Vegan Jackfruit Pulled Pork</p></div>
+                    <div class="cost"><p>$12.99</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Ham</p></div>
+                    <div class="cost"><p>$12.99</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Sausage</p></div>
+                    <div class="cost"><p>$12.99</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+                
                     </div>  
                 </div>
                 <button type="button" class="collapsible vegetables">Vegetables</button>
                 <div class="content">
                     <div class="entry-container">
                         <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <p class="cost">$16.75</p>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
-                        <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <div class="cost"><p>$16.75</p></div>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
+                    <div class="menu-item"><p>Barbeque Beans</p></div>
+                    <div class="cost"><p>$2.25</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+ 		        <div class="entry">
+                    <div class="menu-item"><p>Coleslaw</p></div>
+                    <div class="cost"><p>$2.25</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>Potato Salad</p></div>
+                    <div class="cost"><p>$2.25</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+
+                <div class="entry">
+                    <div class="menu-item"><p>French Fries</p></div>
+                    <div class="cost"><p>$2.25</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
                     </div>                    
                 </div>
-                <button type="button" class="collapsible sides">Sides</button>
+                
+                 <button type="button" class="collapsible sides">Sides</button>
                 <div class="content">
                     <div class="entry-container">
                         <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <p class="cost">$16.75</p>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
-                        <div class="entry">
-                            <div class="menu-item"><p>Menu Item</p></div>
-                            <div class="cost"><p>$16.75</p></div>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                        </div>
-                    </div>
+                    <div class="menu-item"><p>Jalapeño Peppers </p></div>
+                    <div class="cost"><p>$0.10</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
                 </div>
+ 		        <div class="entry">
+                    <div class="menu-item"><p>Texas Toast / Extra Bun</p></div>
+                    <div class="cost"><p>$0.30</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+                
+                <div class="entry">
+                    <div class="menu-item"><p>Banana Pudding </p></div>
+                    <div class="cost"><p>$1.29</p></div>
+                    <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
+                    </div>                    
+                </div>
+
             </div>
     
             <div class="order-sidebar" id="sidebar">
