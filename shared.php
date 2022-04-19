@@ -1,4 +1,40 @@
-<?php
+<?php $cookie_name = "booleanSubmit";
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+$cookie_value = "1";} 
+else if (isset($_POST['phoneNumber']) && !empty($_POST['phoneNumber'])){
+$cookie_value = "1";  
+}
+else{
+    $cookie_value = "0";
+}
+
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+
+if($cookie_value === "0"){$Newsletter = <<<OUTPUT
+    <section>
+        <div class="email-newsletter-container">
+            <h2>Keep up with David's!</h2>
+            <p>Stay all up in our grill for exclusive offers, discounts, menu updates, and more.</p>
+            <form action="index.php" method="post">
+                <label for="email">Email address</label><input type="text" id="email" name="email" placeholder="Email address">
+                <label for="phoneNumber">Phone number</label><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+                <input type="submit" name="newsletter_signup" class="btn-secondary" value="Sign Up">
+            </form>
+        </div>
+    </section>
+OUTPUT;
+} else{
+    $Newsletter = <<<OUTPUT
+    <section>
+        <p class="h3">Thanks for signing up for our updates<p><form method="post">
+        <form>
+            <input type="submit" name="reset"
+                    class="btn-primary" value="Sign up again" />
+        </form>
+    </section
+OUTPUT;
+}
 
 $navHome = "<header>
     <div class='headernav home'>
