@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Our Story - David's Barbeque</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
         <link href="css/style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
     </head>
@@ -12,8 +12,17 @@
 
         <header>
             <div class="headernav">
-                <img src="img/logo-white.svg" alt="David's Barbeque logo">
-                <i class="fas fa-bars"></i>
+                <a href="index.html" title="Home"><img class="nav-logo-mobile" src="img/logo-white.svg" alt="David's Barbeque logo"></a>
+                <a href="index.html" title="Home"><img class="nav-logo-desktop" src="img/logo-flame.svg" alt="David's Barbeque icon"></a>
+                <button class="navbar-toggler" onclick="changeStyle()" type="button"><i class="fas fa-bars"></i></button>
+                <div class="navbar" id="main-navigation">
+                    <a class="nav-item" href="menu.php" title="Menu">Menu</a>
+                    <a class="nav-item" href="catering.html" title="Catering">Catering</a>
+                    <a class="nav-item" href="our-story.html" title="Our Story">Our Story</a>
+                    <a class="nav-item" href="store.html" title="Store">Store</a>
+                    <a class="nav-item" href="contact.html" title="Contact">Contact</a>
+                </div>
+                <a class="btn-primary nav-order-button" href="menu.php" alt="order online">Order Online</a>
             </div>
         </header>
 
