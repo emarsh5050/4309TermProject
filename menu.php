@@ -14,10 +14,12 @@
    <body>
       <?php echo $nav; ?>
       <main>
+        <div class="coupon-holder">
+            <p>Get 10% off with code: share 10</p>
+            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
+        </div>
+        <div class="overlay"></div>
          <div class="wrapper">
-            <div class="coupon-holder">
-               <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
-            </div>
             <div class="menu-wrapper-order">
                <h2>Menu</h2>
                <button type="button" class="collapsible meat-by-the-lb">Meats by the pound</button>
@@ -153,32 +155,34 @@
                   </div>
                </div>
             </div>
-            <div class="order-sidebar" id="sidebar">
-               <h3>Order:</h3>
-               <div class="order-body">
-                  <div class="order-entry">
-                     <div class="order-item">Item</div>
-                     <div class="order-quanity">Amount</div>
-                     <div class="order-cost">Cost</div>
-                  </div>
-                  <div class="order-entry">
-                     <div class="order-item">1 lb beef</div>
-                     <div class="order-quanity">1</div>
-                     <div class="order-cost">$16.99</div>
-                  </div>
-                  <div class="order-entry">
-                     <div class="order-quanity">Tax:</div>
-                     <div class="order-cost">$3.67</div>
-                  </div>
-                  <div class="order-entry">
-                     <div class="order-quanity">Total:</div>
-                     <div class="order-cost">$3.67</div>
-                  </div>
-                  <div class="order-checkout-btn">
-                     <a class="btn btn-primary order-button" href="checkout.php">Checkout</a>
-                     <a class="btn btn-primary order-button" onclick="changeStyleNone()">Cancel</a>
-                  </div>
-               </div>
+            <div class="order-sidebar">
+                <h3>Order:</h3>
+                <div class="order-sidebar-content" id="sidebar">
+                   <div class="order-body">
+                      <div class="order-entry">
+                         <div class="order-item">Item</div>
+                         <div class="order-quanity">Amount</div>
+                         <div class="order-cost">Cost</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-item">1 lb beef</div>
+                         <div class="order-quanity">1</div>
+                         <div class="order-cost">$16.99</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-quanity">Tax:</div>
+                         <div class="order-cost">$3.67</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-quanity">Total:</div>
+                         <div class="order-cost">$3.67</div>
+                      </div>
+                      <div class="order-checkout-btn">
+                         <a class="btn btn-primary order-button" href="checkout.php">Checkout</a>
+                         <a class="btn btn-primary order-button" onclick="changeStyleNone()">Cancel</a>
+                      </div>
+                   </div>
+                </div>
             </div>
          </div>
       </main>
