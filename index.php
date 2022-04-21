@@ -86,12 +86,32 @@
                 </div>
             </section>
 
-            <?php echo $Newsletter; ?>
-            
+            <section>
+                <div class="email-newsletter-container">
+                    <h2>Keep up with David's!</h2>
+                    <p>Stay all up in our grill for exclusive offers, discounts, menu updates, and more.</p>
+                    <form>
+                        <label for="email">Email address</label><input type="text" id="email" name="email" placeholder="Email address">
+                        <label for="phoneNumber">Phone number</label><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+                        <input type="submit" name="submit" class="btn-secondary" value="Sign Up">
+                    </form>
+                </div>
+            </section>
         </main>
 
-    <?php echo $footer; ?>
+<?php echo $footer; ?>
+    
         <script src="js/app.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
 
     </body>
 

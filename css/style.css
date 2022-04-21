@@ -491,6 +491,7 @@ p.social-icons {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527)) 
 }
 
+
 @media only screen and (min-width: 992px) {
     .btn-block {
         width: calc(calc(100% - 40px) / 3);
@@ -643,30 +644,24 @@ p.social-icons {
     background-color: var(--dark);
 }
 
-.wrapper{
+    .wrapper{
         display:flex;
     }
 
-    .menu-wrapper{
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-
     .menu-wrapper-order{
-        flex: 1;
-        padding: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
+        left: 25vw;
+        right: 25vw;
+        width: 50vw;
     }
 
 /*end wrappers*/
 
 /*order sidebar*/
     .order-sidebar{
-        margin-right: 5%;
+        position: absolute;
+        right: 1.75vw;
         margin-top: 54px;
-        width: 20%;
+        width: 20vw;
         display: none;
     }
 
@@ -720,6 +715,25 @@ p.social-icons {
         }
     }
 /*end order sidebar*/
+
+/*Menu Coupon*/
+    .coupon-holder{
+        position: fixed;
+        left: 1.75vw;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 20vw;
+        display: block;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+    
+    .coupon-image{
+        width:auto;
+        height: 15%;
+        object-fit: contain;
+    }
+/*Menu Coupon end*/
 
 /*collapsable styles*/
     .collapsible {
@@ -898,3 +912,50 @@ p.social-icons {
 }
 
 /* our story image container end */
+
+/*form*/
+
+.wrapperCHK{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+form {
+	margin-bottom: 2.618rem;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+fieldset {
+	margin: 0;
+	margin-bottom: .75rem;
+}
+legend {
+	padding-top: 1rem;
+}
+
+ .order-sidebar2{
+        display: block;
+    }
+
+ @media only screen and (min-width: 900px) {
+        .wrapperCHK{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row-reverse;
+            width: 90%;
+        }
+        
+        form{
+            flex: 1;
+            padding-right:5%;
+        }
+
+        .order-sidebar2{
+            width: 30vw;
+            margin-top: 54px;
+        }
+    }
+
+/*end of form*/
