@@ -6,7 +6,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>David's Barbeque</title>
+      <title>David's Barbeque Menu</title>
       <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
       <link href="css/style.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
@@ -14,10 +14,7 @@
    <body>
       <?php echo $nav; ?>
       <main>
-        <div class="coupon-holder">
-            <p>Get 10% off with code: share 10</p>
-            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
-        </div>
+        <?php echo $coupon; ?>
         <div class="overlay"></div>
          <div class="wrapper">
             <div class="menu-wrapper-order">

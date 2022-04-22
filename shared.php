@@ -1,9 +1,48 @@
 <?php
 
+if (isset($_POST["email"]) && !empty($_POST["email"])){
+		setcookie("booleanSubmit", $_POST["email"], time() + 14400);
+		$_COOKIE['booleanSubmit'] = $_POST["email"];
+	
+	} 
+	elseif (isset($_POST["phoneNumber"]) && !empty($_POST["phoneNumber"])){
+		setcookie("booleanSubmit", $_POST["phoneNumber"], time() + 14400);
+		$_COOKIE['booleanSubmit'] = $_POST["phoneNumber"];
+	
+	}
+	else if (isset($_POST["reset"])){
+		setcookie("booleanSubmit", "", time() - 3600);
+		$_COOKIE['booleanSubmit'] = "";
+	}
+
+	if (isset($_COOKIE["booleanSubmit"]) && !empty($_COOKIE["booleanSubmit"])){
+        $Newsletter = 
+        <<<OUTPUT
+        <p class="h3">Thanks for signing up for our updates!<p><form method="post">
+        <form>
+            <input type="submit" name="reset" class="btn-primary" value="Sign Up Again" />
+        </form>
+OUTPUT;
+	} else {
+        $Newsletter = <<<OUTPUT
+            <section>
+                <div class="email-newsletter-container">
+                    <h2>Keep up with David's!</h2>
+                    <p>Stay all up in our grill for exclusive offers, discounts, menu updates, and more.</p>
+                    <form action="index.php" method="post">
+                        <label for="email">Email address</label><input type="text" id="email" name="email" placeholder="Email address">
+                        <label for="phoneNumber">Phone number</label><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+                        <input type="submit" name="newsletter_signup" class="btn-secondary" value="Sign Up">
+                    </form>
+                </div>
+            </section>
+OUTPUT;
+	}
+
 $navHome = "<header>
     <div class='headernav home'>
-        <a href='index.html' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
-        <a href='index.html' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
+        <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
+        <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
         <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
@@ -63,4 +102,27 @@ $footer = <<<OUTPUT
 </footer>
 OUTPUT;
 
+$coupon0 = <<<OUTPUT
+        <div class="coupon-holder">
+            <p>Try our vegan products!</p>
+            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
+        </div>
+OUTPUT;
+
+$coupon1 = <<<OUTPUT
+        <div class="coupon-holder">
+            <p>Buy a shirt and $2 go to the Arlington historical society with code: share10<</p>
+            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
+        </div>
+OUTPUT;
+
+if (isset($_COOKIE["pCode"]) && !empty($_COOKIE["pCode"])){
+    if($_COOKIE["pCode"] === "ahsFan"){
+    $coupon = $coupon1;}
+    else{
+    $coupon = $coupon0;
+    }
+} else{
+    $coupon = $coupon0;
+}
 ?>

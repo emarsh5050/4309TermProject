@@ -1,10 +1,24 @@
 <?php
+include ('shared.php');
 
 $required = array('firstName', 'lastName', 'email', 'cardNumber','expDate', 'ccv');
 
 $expected = array('firstName', 'middleInit', 'lastName', 'email', 'phoneNumber', 'promoCode', 'cardNumber', 'expDate','ccv','notes');
 
+$expName = array('First Name', 'Middle Initial', 'Last Name', 'Email', 'Phone Number', 'Promo Code', 'Card Number', 'Exp Date','CCV','Notes');
+
 $missing = array();
+
+$cookie_name = "pCode";
+
+if(isset($_POST['promoCode']) && !empty($_POST['promoCode'])){
+		setcookie("pCode", $_POST["promoCode"], time() + 14400);
+		$_COOKIE['pCode'] = $_POST["promoCode"];
+} 
+else{
+    	setcookie("pCode", "", time() - 3600);
+		$_COOKIE['pCode'] = "";
+}
 
 function printArray(array $id){ 	
     $a = "";
@@ -38,95 +52,54 @@ if (isset($_POST['submit'])) {
     }
     
     if(empty($missing)){
-        
+        for ($x = 0; $x <= sizeof($expected) -1; $x++) {
+        $input = $_POST[$expected[$x]];
+        $name = $expName[$x];
         $output .= "
-        <table>
             <tr>
-             <td>Author: </td>
-             <td>$firstName 'promoCode', 'cardNumber', 'expDate','ccv','notes</td>
+             <td>$name:</td>
+             <td class=\"input\">$input</td>
             </tr>
-            
-            <tr>
-             <td>Title: </td>
-             <td>$middleInit</td>
-            </tr>
-            
-            <tr>
-             <td>Email: </td>
-             <td>$lastName</td>
-            </tr>
-            
-            <tr>
-             <td>Comment: </td>
-             <td>$email</td>
-            </tr>
-            
-            <tr>
-             <td>City: </td>
-             <td>$phoneNumber</td>
-            </tr>
-            
-            <tr>
-             <td>City: </td>
-             <td>$promoCode</td>
-            </tr>
-
-            <tr>
-             <td>City: </td>
-             <td>$cardNumber</td>
-            </tr>
-
-           <tr>
-             <td>City: </td>
-             <td>$expDate</td>
-            </tr>
-            
-            <tr>
-             <td>City: </td>
-             <td>$ccv</td>
-            </tr>
-            
-            <tr>
-             <td>City: </td>
-             <td>$notes</td>
-            </tr>
-		</table>   ";} else{
+        ";
+        }
+    } 
+		
+		else{
 		  $missList = implode(", ", $missing);
           $output = "Required fields must be filled out: $missList";
 	}
 }
 else{$output = "<p> Go to form <p>";}
 
-  
-
 ?>
 
 <!DOCTYPE HTML>
 <HTML>
-<HEAD>
-<TITLE> CTEC 4309 Class Working File: Message Form Processing</TITLE>
-<style>
-table, th, td {
-  border:1px solid black;
-  padding: 5px;
-}
-</style>
-</HEAD>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>David's Barbeque</title>
+      <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
+      <link href="css/style.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+        </main>
+            <?php echo $nav; ?>
+            <hr size="1">
+            <div class="h2">Review Your Information</div>
+            <hr size="1">
+            
+            <table>
+            	<?php echo $output;?>
+            </table>
+            
 
-<BODY>
+            <a class="btn btn-primary" href="thankyou.php">Looks Good!</a>
+            <a class="btn btn-primary" href="checkout.php">Back</a>
 
-</br>
-    
-CTEC 4309 Class Working File 
-<hr>
-
-<h2>Preview Your Message</h2>
-
-<hr size="1">
-<p>
-	<?php echo $output;?>
-</p>
-
-
-</BODY>
+            
+            <footer><?php echo $footer; ?></footer>
+        </main>
+    </BODY>
 </HTML>

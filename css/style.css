@@ -306,7 +306,7 @@ a.nav-item {
     font-size: 30px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
     div.headernav {
         justify-content: flex-start;
     }
@@ -492,7 +492,7 @@ p.social-icons {
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
     .btn-block {
         width: calc(calc(100% - 40px) / 3);
     }
@@ -563,7 +563,7 @@ p.social-icons {
     margin: 20px 0 10px 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
     .event-container {
         width: calc(calc(100% - 20px) / 2);
     }
@@ -629,7 +629,7 @@ p.social-icons {
     width: 100%;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
     .email-newsletter-container form input[type=text] {
         width: 500px;
     }
@@ -654,7 +654,7 @@ p.social-icons {
         margin-right: 5%;
     }
     
-     @media only screen and (min-width: 992px) {
+     @media only screen and (min-width: 900px) {
         .menu-wrapper-order{
             width: 45%;
             margin-left: 20vw;
@@ -708,7 +708,7 @@ p.social-icons {
         padding: 20px;
     }
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 900px) {
         .wrapper{
             display: block;
         }
@@ -771,7 +771,7 @@ p.social-icons {
         height:100%;
     }
     
-   @media only screen and (max-width: 992px) {
+   @media only screen and (max-width: 900px) {
         .coupon-holder{
             left:0;
             position: relative;
@@ -996,7 +996,7 @@ legend {
         display: block;
     }
 
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 900px) {
         .wrapperCHK{
             display: flex;
             margin-left: auto;
@@ -1017,3 +1017,35 @@ legend {
     }
 
 /*end of form*/
+
+/*begin tables*/
+table{
+    table-layout: auto;
+    width: 65%;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: var(--light);
+}
+
+.input{
+    text-align: right;
+}
+
+
+
+/*end tables*/

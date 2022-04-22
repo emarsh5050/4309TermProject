@@ -46,7 +46,7 @@
             	<fieldset>
             		<legend>Payment Information</legend>
             		<div class="form-group">
-            			First name* <input class="form-control" id="first-name" name="first-name" type="text">
+            			First name* <input class="form-control" id="first-name" name="firstName" type="text">
             		</div>
             		<div class="form-group">
             			Middle Initial <input class="form-control" maxlength="1" name="middleInit" type="text">
