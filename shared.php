@@ -1,5 +1,7 @@
 <?php
 
+//check for submissions on email or phone number or see if reset button has been clicked
+
 if (isset($_POST["email"]) && !empty($_POST["email"])){
 		setcookie("booleanSubmit", $_POST["email"], time() + 14400);
 		$_COOKIE['booleanSubmit'] = $_POST["email"];
@@ -14,6 +16,8 @@ if (isset($_POST["email"]) && !empty($_POST["email"])){
 		setcookie("booleanSubmit", "", time() - 3600);
 		$_COOKIE['booleanSubmit'] = "";
 	}
+
+//change susbscribe element based on cookie 
 
 	if (isset($_COOKIE["booleanSubmit"]) && !empty($_COOKIE["booleanSubmit"])){
         $Newsletter = 
@@ -38,6 +42,8 @@ OUTPUT;
             </section>
 OUTPUT;
 	}
+	
+//make nav options 
 
 $navHome = "<header>
     <div class='headernav home'>
@@ -73,6 +79,8 @@ $nav = "<header>
     </div>
 </header>";
 
+//make footer 
+
 $footer = <<<OUTPUT
 <footer>
     <div class="prefooter-container">
@@ -102,27 +110,118 @@ $footer = <<<OUTPUT
 </footer>
 OUTPUT;
 
+//coupon options
+
 $coupon0 = <<<OUTPUT
         <div class="coupon-holder">
             <p>Try our vegan products!</p>
-            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
+            <div class="overlay"></div>
+            <img src="img/okra.jpg" class="coupon-image" alt="beef brisket">
         </div>
 OUTPUT;
 
 $coupon1 = <<<OUTPUT
         <div class="coupon-holder">
-            <p>Buy a shirt and $2 go to the Arlington historical society with code: share10<</p>
-            <img src="img/button-block-our-story.jpg" class="coupon-image" alt="beef brisket">
+            <p>Buy a shirt and $2 go to the Arlington historical society with code: share10</p>
+            <div class="overlay"></div>
+            <img src="img/hands.jpg" class="coupon-image" alt="beef brisket">
         </div>
 OUTPUT;
 
+//create homapge elements 
+
+$threeBlockHighlight= <<<OUTPUT
+            <section>
+                <div class="btn-block-container">
+                    <a class="btn-block" href="menu.php" alt="Menu">
+                        <img src="img/button-block-menu.jpg" alt="beef brisket">
+                        <div class="gradient-b2t"></div>
+                        <p>See our menu</p>
+                        <div class="dark-hover"></div>
+                    </a>
+                    <a class="btn-block" href="catering.html" alt="Menu">
+                        <img src="img/button-block-catering.jpg" alt="beef brisket">
+                        <div class="gradient-b2t"></div>
+                        <p>Order catering</p>
+                        <div class="dark-hover"></div>
+                    </a>
+                    <a class="btn-block" href="our-story.html" alt="Menu">
+                        <img src="img/button-block-our-story.jpg" alt="beef brisket">
+                        <div class="gradient-b2t"></div>
+                        <p>Get to know us</p>
+                        <div class="dark-hover"></div>
+                    </a>
+                </div>
+            </section>
+OUTPUT;
+
+$calenderElement= <<<OUTPUT
+            <section>
+                <h2>Community Calendar</h2>
+                <div class="calendar-container">
+                    <div class="event-container">
+                        <div class="event-day">
+                            <p>Wed<br><span>13</span><br>April</p>
+                        </div>
+                        <div class="event-info">
+                            <p class="event-name">Arlington Historical Society Meeting</p>
+                            <p class="event-time"><i class="fas fa-clock"></i> 5 - 6 p.m.</p>
+                            <p class="event-location"><i class="fas fa-map-marker"></i> Texas Room</p>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div class="event-day">
+                            <p>Tue<br><span>3</span><br>May</p>
+                        </div>
+                        <div class="event-info">
+                            <p class="event-name">Duff Elementary Profit Share</p>
+                            <p class="event-time"><i class="fas fa-clock"></i> 5 - 8 p.m.</p>
+                            <p class="event-location"><i class="fas fa-map-marker"></i> David's Dining Room</p>
+                        </div>
+                    </div>
+                    <a class="btn-secondary" href="calendar.html" alt="community calendar">View all events</a>
+                </div>
+            </section>
+OUTPUT;
+$merchElement= <<<OUTPUT
+            <section class="section-full-width">
+                <div class="feature-container">
+                    <img src="img/merch-feature.jpg" alt="barbeque sauce">
+                    <div class="gradient-t2b"></div>
+                    <h3>Barbeque sauce, accessories, and t-shirts for the whole family.</h3>
+                    <a class="btn-primary" href="store.html" alt="Store">Shop merch</a>
+                </div>
+            </section>
+OUTPUT;
+
+//set generic values for hompage and coupon 
+$homepage = $threeBlockHighlight; 
+$homepage .= $calenderElement;
+$homepage .= $merchElement;
+$coupon = $coupon0;
+
+//check for specific promo code to change value
 if (isset($_COOKIE["pCode"]) && !empty($_COOKIE["pCode"])){
     if($_COOKIE["pCode"] === "ahsFan"){
-    $coupon = $coupon1;}
-    else{
-    $coupon = $coupon0;
+    $coupon = $coupon1;
+    $homepage = $calenderElement;
+    $homepage .= $threeBlockHighlight; 
+    $homepage .= $merchElement;  
     }
-} else{
-    $coupon = $coupon0;
+} 
+
+$PublicIP = $_SERVER['REMOTE_ADDR'];
+//Uses ipinfo.io to get the location of the IP Address, you can use another site but it will probably have a different implementation
+$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
+//Breaks down the JSON object into an array
+$json     = json_decode($json, true);
+//This variable is the visitor's region
+$region   = $json['region'];
+
+if($region != "Texas"){
+    $homepage = $merchElement;
+    $homepage .= $threeBlockHighlight; 
+    $homepage .= $calenderElement; 
 }
+
 ?>

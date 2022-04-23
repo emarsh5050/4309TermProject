@@ -15,7 +15,6 @@
       <?php echo $nav; ?>
       <main>
         <?php echo $coupon; ?>
-        <div class="overlay"></div>
          <div class="wrapper">
             <div class="menu-wrapper-order">
                <h2>Menu</h2>
