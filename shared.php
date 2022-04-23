@@ -3,17 +3,17 @@
 //check for submissions on email or phone number or see if reset button has been clicked
 
 if (isset($_POST["email"]) && !empty($_POST["email"])){
-		setcookie("booleanSubmit", $_POST["email"], time() + 14400);
+		setcookie("booleanSubmit", $_POST["email"], time() + (86400 * 30));
 		$_COOKIE['booleanSubmit'] = $_POST["email"];
 	
 	} 
 	elseif (isset($_POST["phoneNumber"]) && !empty($_POST["phoneNumber"])){
-		setcookie("booleanSubmit", $_POST["phoneNumber"], time() + 14400);
+		setcookie("booleanSubmit", $_POST["phoneNumber"], time() + (86400 * 30));
 		$_COOKIE['booleanSubmit'] = $_POST["phoneNumber"];
 	
 	}
 	else if (isset($_POST["reset"])){
-		setcookie("booleanSubmit", "", time() - 3600);
+		setcookie("booleanSubmit", "", time() - (86400 * 30));
 		$_COOKIE['booleanSubmit'] = "";
 	}
 
@@ -128,6 +128,14 @@ $coupon1 = <<<OUTPUT
         </div>
 OUTPUT;
 
+$coupon2 = <<<OUTPUT
+        <div class="coupon-holder">
+            <p>Get 10% off 2 pounds of barbeque with code: lbs10</p>
+            <div class="overlay"></div>
+            <img src="img/sausage.jpg" class="coupon-image" alt="beef brisket">
+        </div>
+OUTPUT;
+
 //create homapge elements 
 
 $threeBlockHighlight= <<<OUTPUT
@@ -202,11 +210,16 @@ $coupon = $coupon0;
 
 //check for specific promo code to change value
 if (isset($_COOKIE["pCode"]) && !empty($_COOKIE["pCode"])){
-    if($_COOKIE["pCode"] === "ahsFan"){
+    if($_COOKIE["pCode"] === "ahsfan"){
     $coupon = $coupon1;
     $homepage = $calenderElement;
     $homepage .= $threeBlockHighlight; 
     $homepage .= $merchElement;  
+    }elseif($_COOKIE["pCode"] === "school10"){
+    $coupon = $coupon2; 
+    $homepage = $calenderElement;
+    $homepage .= $threeBlockHighlight; 
+    $homepage .= $merchElement; 
     }
 } 
 
