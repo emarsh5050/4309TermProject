@@ -708,7 +708,7 @@ p.social-icons {
         padding: 20px;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 992px) {
         .wrapper{
             display: block;
         }
@@ -771,7 +771,7 @@ p.social-icons {
         height:100%;
     }
     
-   @media only screen and (max-width: 900px) {
+   @media only screen and (max-width: 992px) {
        .coupon-holder p {
             font-size: 1em; 
        }
@@ -935,6 +935,13 @@ p.social-icons {
 
 /* our story image container start */
 
+section.our-story {
+    margin-lefT: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+}
+
 .our-story-img {
     filter: drop-shadow(0 0 10px var(--medium));
     border-radius: 7px;
@@ -942,39 +949,178 @@ p.social-icons {
     aspect-ratio: 1/1;
     width: 85%;
     z-index: 1;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .our-story-quote {
     margin-top: 20px;
     color: var(--white);
-    width: 85%;
+    width: 100%;
 }
 
 .our-story-quote span p {
     text-align: right;
 }
 
-.our-story-container {
-    margin: 20px 0;
-    max-width: 400px;
+.our-story-img-container {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0 40px ;
+    margin: 0 0 20px 0;
 }
 
 .our-story-quote-background {
     background-color: var(--primary);
-    border-radius: 7px;
     z-index: -1;
     position: absolute;
     bottom: 0;
-    height: 75%;
+    height: 85%;
     width: 100%;
-    filter: drop-shadow(0 0 10px var(--medium));
+}
+
+.our-story-container p {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+    .our-story-quote-background {
+        width: 100%;
+        border-radius: 0;
+        height: 230px;
+        top: 35;
+        right: 0;
+    }
+
+    .our-story-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .our-story-img-container {
+        max-width: 100%;
+        height: 300px;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .our-story-quote {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    div.our-story {
+        margin-top: 40px;
+    }
 }
 
 /* our story image container end */
+
+/* reviews */
+
+.review-img-name {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.review-img-name img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.review-name-date {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.review-name-date h4, .review-name-date p {
+    margin: 0 0 0 10px;
+}
+
+.review-container i {
+    color: var(--secondary);
+    margin: 20px 0;
+}
+
+.review-container {
+    margin: 40px 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .review-container {
+        width: 70%;
+        margin: 20px 0;
+    }
+
+    .reviews {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+/* reviews end */
+
+/* media */
+
+.media {
+    background-color: var(--light);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 40px 40px 20px 40px;
+    margin: 0 0 40px 0;
+}
+
+.media-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.media-container a {
+    text-decoration: none;
+}
+
+.media-container a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 992px) {
+    .media {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .media h2 {
+        width: 100%;
+    }
+
+    .media-container {
+        width: 33.33%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .media {
+        padding-left: calc(3% + 40px);
+        padding-right: calc(3% + 40px);
+    }
+}
+
+/* media end */
 
 /*form*/
 
@@ -1001,7 +1147,7 @@ legend {
         display: block;
     }
 
- @media only screen and (min-width: 900px) {
+ @media only screen and (min-width: 992px) {
         .wrapperCHK{
             display: flex;
             margin-left: auto;
