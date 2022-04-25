@@ -11,7 +11,7 @@ coll[i].addEventListener("click", function() {
     } else {
     content.style.display = "block";
     }
-});
+}); }
 
 function changeStyleNone(){
     var element = document.getElementById("sidebar");
@@ -22,7 +22,7 @@ function changeStyleBlock(){
     var element = document.getElementById("sidebar");
     element.style.display = "block";
 }
-}
+
 
 var navOpener = document.getElementById("navbar-open");
 var navbar = document.getElementById("main-navigation");
