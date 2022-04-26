@@ -53,8 +53,8 @@ $navHome = "<header>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
             <a class='nav-item' href='catering.html' title='Catering'>Catering</a>
-            <a class='nav-item' href='our-story.html' title='Our Story'>Our Story</a>
-            <a class='nav-item' href='store.html' title='Store'>Store</a>
+            <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
+            <a class='nav-item' href='store.php' title='Store'>Store</a>
             <a class='nav-item' href='contact.html' title='Contact'>Contact</a>
             <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
             <i class='fas fa-times navbar-close' id='navbar-close'></i>

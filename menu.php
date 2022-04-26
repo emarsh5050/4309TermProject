@@ -182,7 +182,7 @@
             </div>
          </div>
       </main>
-      <footer><?php echo $footer; ?></footer>
+      <?php echo $footer; ?>
       <script src="js/app.js"></script>
    </body>
 </html>
