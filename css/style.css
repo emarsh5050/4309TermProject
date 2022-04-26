@@ -88,6 +88,8 @@ p {
     height: 100%;
     object-fit: cover;
     position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .gradient-t2b {
@@ -193,7 +195,7 @@ label {
     width: 1px;
 }
 
-input[type=text] {
+input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number] {
     width: 100%;
     padding: 10px 10px;
     border-radius: 7px;
@@ -201,10 +203,22 @@ input[type=text] {
     background-color: var(--light);
     margin: 5px 0;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
 }
 
 input:focus {
     outline: 2px solid var(--secondary);
+}
+
+::placeholder {
+    color: var(--dark);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* forms end */
@@ -1017,6 +1031,8 @@ section.our-story {
 
     div.our-story {
         margin-top: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -1059,7 +1075,7 @@ section.our-story {
 
 @media only screen and (min-width: 992px) {
     .review-container {
-        width: 70%;
+        width: 80%;
         margin: 20px 0;
     }
 
@@ -1197,6 +1213,85 @@ tbody tr:nth-of-type(even) {
     text-align: right;
 }
 
-
-
 /*end tables*/
+
+/* catering */
+
+.catering-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--primary);
+    border-radius: 7px;
+}
+
+.catering-form fieldset legend {
+    color: var(--white);
+}
+
+.catering-form fieldset {
+    width: 100%;
+}
+
+.catering-form h3, .catering-form p {
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+}
+
+.catering-pictures {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.catering-img-container {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 5/3;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.catering-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catering-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: fit-content;
+    overflow: hidden;
+}
+
+input[type=text]#description {
+    height: 150px;
+}
+
+@media only screen and (min-width: 992px) {
+    .catering-pictures {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .catering-img-container {
+        width: 32%;
+    }
+
+    .catering-form {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* catering end */
