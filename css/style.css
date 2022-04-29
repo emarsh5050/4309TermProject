@@ -181,6 +181,10 @@ a.btn-primary:focus, a.btn-secondary:focus, .btn-primary:focus, .btn-secondary:f
     outline: 2px solid var(--secondary);
 }
 
+.btn-primary:hover, .btn-secondary:hover {
+    cursor: pointer;
+}
+
 /* links and buttons end */
 
 /* forms start */
@@ -495,6 +499,12 @@ p.social-icons {
     font-size: 34px;
     text-align: center;
     line-height: 1.1em;
+}
+
+.btn-block p.hovered {
+    z-index: 9;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
 }
 
 .btn-block .gradient-b2t, .btn-block .dark-hover {
@@ -1297,7 +1307,7 @@ color: var(--light);
 
 /* catering */
 
-.catering-form {
+.general-form {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -1306,15 +1316,15 @@ color: var(--light);
     border-radius: 7px;
 }
 
-.catering-form fieldset legend {
+.general-form fieldset legend {
     color: var(--white);
 }
 
-.catering-form fieldset {
+.general-form fieldset {
     width: 100%;
 }
 
-.catering-form h3, .catering-form p {
+.general-form h3, .general-form p {
     color: var(--white);
     text-align: center;
     width: 100%;
@@ -1333,6 +1343,7 @@ color: var(--light);
     aspect-ratio: 5/3;
     border-radius: 7px;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .catering-img-container img{
@@ -1366,7 +1377,7 @@ input[type=text]#description {
         width: 32%;
     }
 
-    .catering-form {
+    .general-form {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
@@ -1375,3 +1386,57 @@ input[type=text]#description {
 }
 
 /* catering end */
+
+/* contact */
+
+.contact-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-hours {
+    background-color: var(--light);
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.iframe-container {
+    width: 100%;
+    aspect-ratio: 3/4;
+    max-width: 900px;
+    border-radius: 7px;
+    border: 5px solid var(--primary);
+}
+
+.iframe-container iframe {
+width: 100%;
+height: 100%;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form .general-form {
+    margin-bottom: 0;
+}
+
+.contact-form a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+}
+
+@media only screen and (min-width: 576px) {
+    .iframe-container {
+        aspect-ratio: 5/3;
+    }
+}
+
+/* contact end */
