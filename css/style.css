@@ -88,8 +88,6 @@ p {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .gradient-t2b {
@@ -181,10 +179,6 @@ a.btn-primary:focus, a.btn-secondary:focus, .btn-primary:focus, .btn-secondary:f
     outline: 2px solid var(--secondary);
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-    cursor: pointer;
-}
-
 /* links and buttons end */
 
 /* forms start */
@@ -199,7 +193,7 @@ label {
     width: 1px;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number] {
+input[type=text] {
     width: 100%;
     padding: 10px 10px;
     border-radius: 7px;
@@ -207,22 +201,10 @@ input[type=text], input[type=email], input[type=tel], input[type=date], input[ty
     background-color: var(--light);
     margin: 5px 0;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--dark);
 }
 
 input:focus {
     outline: 2px solid var(--secondary);
-}
-
-::placeholder {
-    color: var(--dark);
-}
-
-fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* forms end */
@@ -373,6 +355,17 @@ a.nav-item {
     }
 }
 
+.disclaimer{
+    width:100%;
+    background-color: var(--primary);
+    text-align: center;
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+
+.disclaimer p{
+    margin: 0;
+}
 /* header end */
 
 /* footer start */
@@ -499,12 +492,6 @@ p.social-icons {
     font-size: 34px;
     text-align: center;
     line-height: 1.1em;
-}
-
-.btn-block p.hovered {
-    z-index: 9;
-    text-decoration: underline;
-    text-decoration-color: var(--secondary);
 }
 
 .btn-block .gradient-b2t, .btn-block .dark-hover {
@@ -1041,8 +1028,6 @@ section.our-story {
 
     div.our-story {
         margin-top: 40px;
-        padding-left: 10%;
-        padding-right: 10%;
     }
 }
 
@@ -1085,7 +1070,7 @@ section.our-story {
 
 @media only screen and (min-width: 992px) {
     .review-container {
-        width: 80%;
+        width: 70%;
         margin: 20px 0;
     }
 
@@ -1304,139 +1289,3 @@ color: var(--light);
     }
 }
 /*end merch item*/
-
-/* catering */
-
-.general-form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 40px;
-    background-color: var(--primary);
-    border-radius: 7px;
-}
-
-.general-form fieldset legend {
-    color: var(--white);
-}
-
-.general-form fieldset {
-    width: 100%;
-}
-
-.general-form h3, .general-form p {
-    color: var(--white);
-    text-align: center;
-    width: 100%;
-}
-
-.catering-pictures {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.catering-img-container {
-    overflow: hidden;
-    width: 100%;
-    aspect-ratio: 5/3;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    max-width: 600px;
-}
-
-.catering-img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.catering-info {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    height: fit-content;
-    overflow: hidden;
-}
-
-input[type=text]#description {
-    height: 150px;
-}
-
-@media only screen and (min-width: 992px) {
-    .catering-pictures {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-
-    .catering-img-container {
-        width: 32%;
-    }
-
-    .general-form {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
-
-/* catering end */
-
-/* contact */
-
-.contact-info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.contact-hours {
-    background-color: var(--light);
-    width: 100%;
-    text-align: center;
-    padding: 40px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.iframe-container {
-    width: 100%;
-    aspect-ratio: 3/4;
-    max-width: 900px;
-    border-radius: 7px;
-    border: 5px solid var(--primary);
-}
-
-.iframe-container iframe {
-width: 100%;
-height: 100%;
-}
-
-.contact-form {
-    text-align: center;
-}
-
-.contact-form .general-form {
-    margin-bottom: 0;
-}
-
-.contact-form a {
-    text-decoration: none;
-    margin-bottom: 20px;
-    display: block;
-}
-
-@media only screen and (min-width: 576px) {
-    .iframe-container {
-        aspect-ratio: 5/3;
-    }
-}
-
-/* contact end */
