@@ -46,6 +46,9 @@ OUTPUT;
 //make nav options 
 
 $navHome = "<header>
+    <div class = 'disclaimer'>
+    <p>This page is produced as a class project</p>
+    </div>
     <div class='headernav home'>
         <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
         <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
@@ -63,6 +66,9 @@ $navHome = "<header>
 </header>";
 
 $nav = "<header>
+    <div class = 'disclaimer'>
+    <p>This page is produced as a class project</p>
+    </div>
     <div class='headernav'>
         <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
         <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
