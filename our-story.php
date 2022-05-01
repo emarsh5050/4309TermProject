@@ -42,18 +42,20 @@
             </section>
 
             <section class="media">
+                <div class="media-img"><img src="img/our-story.jpg" alt="Three people cooking barbeque"></div>
+                <div class="gradient-b2t"></div>
                 <h2>David's in the media</h2>
                 <div class="media-container">
                     <p>"One of the most under-appreciated culinary destinations in North Texas"</p>
-                    <a target="_blank" alt="Fort Worth Weekly article" href="https://www.fwweekly.com/2018/04/11/not-so-fast-food/">&mdash; Fort Worth Weekly</a>
+                    <p>&mdash; <a target="_blank" alt="Fort Worth Weekly article" href="https://www.fwweekly.com/2018/04/11/not-so-fast-food/">Fort Worth Weekly</a></p>
                 </div>
                 <div class="media-container">
                     <p>"A classic Texas barbecue joint that focuses on the more traditional side of barbecue in an old-fashioned barbecue house setting"</p>
-                    <a target="_blank" alt="Central Track article" href="https://www.centraltrack.com/cued-up-19/">&mdash; Central Track</a>
+                    <p>&mdash; <a target="_blank" alt="Central Track article" href="https://www.centraltrack.com/cued-up-19/">Central Track</a></p>
                 </div>
                 <div class="media-container">
                     <p>"One of DFW's shiniest hidden gems"</p>
-                    <a target="_blank" alt="Dallas Eater article" href="https://dallas.eater.com/2016/6/16/11942912/davids-barbecue-pantego">&mdash; Dallas Eater</a>
+                    <p>&mdash; <a target="_blank" alt="Dallas Eater article" href="https://dallas.eater.com/2016/6/16/11942912/davids-barbecue-pantego">Dallas Eater</a></p>
                 </div>
             </section>
 
