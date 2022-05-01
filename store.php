@@ -36,85 +36,69 @@
                         <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
                 </div>
                     <div class = "merch-item-container">
-                        <img src="img/shirt.jpg" alt="beef brisket">
-                        <div class="name-cost-container">
-                            <p>T-shirts</p>
-                            <p>$10</p>
-                        </div>
-                            <p>Size:</p>
-                            <select name="size">
-                                <option value=""></option>
-                                <option value="small">Small</option>
-                                <option value="medium">Medium</option>
-                                <option value="large">Large</option>
-                            </select>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                    <img src="img/sauce.jpg" alt="beef brisket">
+                    <div class="name-cost-container">
+                        <p>Barbeque Sauce</p>
+                        <p>$3-$10</p>
                     </div>
-                        <div class = "merch-item-container">
-                        <img src="img/sauce.jpg" alt="beef brisket">
-                        <div class="name-cost-container">
-                            <p>Barbeque Sauce</p>
-                            <p>$3-$10</p>
-                        </div>
-                    
-                            <p>Size:</p>
-                            <select name="size">
-                                <option value=""></option>
-                                <option value="small">Small $3</option>
-                                <option value="medium">Medium $6</option>
-                                <option value="large">Large $10</option>
-                            </select>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                    
-                    </div>
-                        <div class = "merch-item-container">
-                        <img src="img/sticker.png" alt="beef brisket">
-                        <div class="name-cost-container">
-                            <p>Stickers</p>
-                            <p>$1-$3</p>
-                        </div>
-                        
-                            <p>Size:</p>
-                            <select name="size">
-                                <option value=""></option>
-                                <option value="small">Small $1</option>
-                                <option value="medium">Medium $2</option>
-                                <option value="large">Large $3</option>
-                            </select>
-                            <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
-                    
-                    </div>
+                  
+                        <p>Size:</p>
+                        <select name="size">
+                            <option value=""></option>
+                            <option value="small">Small $3</option>
+                            <option value="medium">Medium $6</option>
+                            <option value="large">Large $10</option>
+                        </select>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                 
                 </div>
-                <div class="merch-cart" id="sidebar">
-                    <h3>Cart:</h3>
-                    <div class="merch-cart-content">
-                    <div class="order-body">
-                        <div class="order-entry">
-                            <div class="order-item">Item</div>
-                            <div class="order-quanity">Amount</div>
-                            <div class="order-cost">Cost</div>
-                        </div>
-                        <div class="order-entry">
-                            <div class="order-item">Med T-shirt</div>
-                            <div class="order-quanity">1</div>
-                            <div class="order-cost">$10.00</div>
-                        </div>
-                        <div class="order-entry">
-                            <div class="order-quanity">Tax:</div>
-                            <div class="order-cost">$3.67</div>
-                        </div>
-                        <div class="order-entry">
-                            <div class="order-quanity">Total:</div>
-                            <div class="order-cost">$13.67</div>
-                        </div>
-                        <div class="order-checkout-btn">
-                            <a class="btn btn-primary order-button" href="checkout.php">Checkout</a>
-                            <a class="btn btn-primary order-button" onclick="changeStyleNone()">Cancel</a>
-                        </div>
+                    <div class = "merch-item-container">
+                    <img src="img/sticker.png" alt="beef brisket">
+                    <div class="name-cost-container">
+                        <p>Stickers</p>
+                        <p>$1-$3</p>
                     </div>
-                    </div>
+                    
+                        <p>Size:</p>
+                        <select name="size">
+                            <option value=""></option>
+                            <option value="small">Small $1</option>
+                            <option value="medium">Medium $2</option>
+                            <option value="large">Large $3</option>
+                        </select>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                
                 </div>
-            </section>
+            </div>
+            <div class="merch-cart" id="sidebar">
+                <h3>Cart:</h3>
+                <div class="merch-cart-content">
+                   <div class="order-body">
+                      <div class="order-entry">
+                         <div class="order-item">Item</div>
+                         <div class="order-quanity">Amount</div>
+                         <div class="order-cost">Cost</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-item">Med T-shirt</div>
+                         <div class="order-quanity">1</div>
+                         <div class="order-cost">$10.00</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-quanity">Tax:</div>
+                         <div class="order-cost">$3.67</div>
+                      </div>
+                      <div class="order-entry">
+                         <div class="order-quanity">Total:</div>
+                         <div class="order-cost">$13.67</div>
+                      </div>
+                      <div class="order-checkout-btn">
+                         <a class="btn btn-primary order-button" href="checkout.php">Checkout</a>
+                         <a class="btn btn-primary order-button" onclick="changeStyleNone()">Cancel</a>
+                      </div>
+                   </div>
+                </div>
+            </div>
         </main>
     </body>
 
