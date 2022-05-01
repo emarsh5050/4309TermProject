@@ -14,9 +14,27 @@
     <body>
         <?php echo $nav; ?>
         <main>
-            <section>
-                <h1>Take a piece of David's home</h1>
-                <div class="body-items-contaier">
+            <div class="merch-hero">
+                <div class="merch-hero-overlay"></div>
+                <img src="img/foodTable.JPG" alt="beef brisket">
+                <p class="h1">Take a piece of David's home</p>
+            </div>
+            <div class="body-items-contaier">
+                <div class = "merch-item-container">
+                    <img src="img/shirt.jpg" alt="beef brisket">
+                    <div class="name-cost-container">
+                        <p>T-shirts</p>
+                        <p>$10</p>
+                    </div>
+                        <p>Size:</p>
+                        <select name="size">
+                            <option value=""></option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                </div>
                     <div class = "merch-item-container">
                         <img src="img/shirt.jpg" alt="beef brisket">
                         <div class="name-cost-container">

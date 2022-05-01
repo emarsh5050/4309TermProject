@@ -334,7 +334,7 @@ a.nav-item {
     font-size: 30px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
     div.headernav {
         justify-content: flex-start;
     }
@@ -381,6 +381,18 @@ a.nav-item {
     a.nav-item:hover {
         color: var(--primary);
     }
+}
+
+.disclaimer{
+    width:100%;
+    background-color: var(--primary);
+    text-align: center;
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+
+.disclaimer p{
+    margin: 0;
 }
 
 /* header end */
@@ -536,7 +548,7 @@ p.footer-phone i {
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
     .btn-block {
         width: calc(calc(100% - 40px) / 3);
     }
@@ -607,7 +619,7 @@ p.footer-phone i {
     margin: 20px 0 10px 0;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
     .event-container {
         width: calc(calc(100% - 20px) / 2);
     }
@@ -673,7 +685,7 @@ p.footer-phone i {
     width: 100%;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
     .email-newsletter-container form input[type=text] {
         width: 500px;
     }
@@ -693,15 +705,15 @@ p.footer-phone i {
     }
     
     .menu-wrapper-order{
+        width: 45%;
+        margin-left: 20.7vw;
+    }
+    
+     @media only screen and (max-width: 992px) {
+        .menu-wrapper-order{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-    }
-    
-     @media only screen and (min-width: 900px) {
-        .menu-wrapper-order{
-            width: 45%;
-            margin-left: 20.7vw;
         }
      }
 /*end wrappers*/
@@ -950,6 +962,18 @@ p.footer-phone i {
         font-weight: 400;
         font-size: 30px;
         line-height: 120%;
+    }
+    
+    .lunch-menu{
+        background-image: url(../img/lunchMenu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-family: 'Alfa Slab One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;  
     }
 
     .vegetables{
@@ -1255,16 +1279,26 @@ tbody tr:nth-of-type(even) {
     align-items: flex-end;
 }
 
+.merch-hero-overlay{
+    position: absolute;
+    width:100vw;
+    height: 200px;
+    background-color: rgba(255,255,255, 0.5);
+    z-index: 6;
+}
+
 
 .merch-hero img{
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 200px;
+    z-index: 4;
 }
 
-.merch-hero h1{
-color: var(--white);
+.merch-hero p{
+color: var(--dark);
+z-index: 10;
 }
 
 .merch-item-container{
