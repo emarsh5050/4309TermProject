@@ -45,38 +45,38 @@ OUTPUT;
 	
 //make nav options 
 
-$navHome = "<header>
-    <div class='headernav home'>
-        <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
-        <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
-        <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
-        <div class='navbar' id='main-navigation'>
-            <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
-            <a class='nav-item' href='catering.html' title='Catering'>Catering</a>
-            <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
-            <a class='nav-item' href='store.php' title='Store'>Store</a>
-            <a class='nav-item' href='contact.html' title='Contact'>Contact</a>
-            <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
-            <i class='fas fa-times navbar-close' id='navbar-close'></i>
-        </div>
-    </div>
-</header>";
+$navHome = <<<OUTPUT
+<header>
+                <div class='headernav home'>
+                    <a class="nav-item" id="nav-logo-link" href='index.php' title='Home'><img "class='nav-logo' src='img/logo-flame.svg' alt='David's Barbeque icon>&nbsp;&nbsp;DAVID'S</a>
+                    <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
+                    <div class='navbar' id='main-navigation'>
+                        <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
+                        <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
+                        <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
+                        <a class='nav-item' href='store.php' title='Store'>Store</a>
+                        <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
+                        <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
+                        <i class='fas fa-times navbar-close' id='navbar-close'></i>
+                    </div>
+                </div>
+            </header>
+OUTPUT;
 
 $nav = "<header>
-    <div class='headernav'>
-        <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
-        <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
-        <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
-        <div class='navbar' id='main-navigation'>
-            <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
-            <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
-            <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
-            <a class='nav-item' href='store.php' title='Store'>Store</a>
-            <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
-            <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
-            <i class='fas fa-times navbar-close' id='navbar-close'></i>
-        </div>
+<div class='headernav'>
+    <a class='nav-item' id='nav-logo-link' href='index.php' title='Home'><img class='nav-logo' src='img/logo-flame.svg' alt='David's Barbeque icon>&nbsp;&nbsp;DAVID'S</a>
+    <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
+    <div class='navbar' id='main-navigation'>
+        <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
+        <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
+        <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
+        <a class='nav-item' href='store.php' title='Store'>Store</a>
+        <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
+        <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
+        <i class='fas fa-times navbar-close' id='navbar-close'></i>
     </div>
+</div>
 </header>";
 
 //make footer 
@@ -92,11 +92,10 @@ $footer = <<<OUTPUT
         <p>Tues - Sat: 11 a.m. - 8 p.m.</p>
         <a href="menu.html" alt="Order online" class="btn-primary">Order online</a>
     </div>
-
     <div class="main-footer-container">
         <h4>Connect</h4>
         <p class="social-icons"><a href="https://www.facebook.com/profile.php?id=115719185124026" alt="David's Barbeque Facebook"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/" alt="Twitter"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/explore/locations/4724175/united-states/pantego-texas/davids-barbecue/" alt="Instagram"><i class="fab fa-instagram"></i></a></p>
-
+        <p class="footer-phone"><a href="tel:8172619998"><i class="fas fa-phone"></i>&nbsp;&nbsp;817-261-9998</a></p>
         <h4>Quick Links</h4>
         <a href="menu.html" alt="Menu">Menu</a>
         <a href="catering.html" alt="Catering">Catering</a>
@@ -104,8 +103,7 @@ $footer = <<<OUTPUT
         <a href="store.html" alt="Store">Store</a>
         <a href="contact.html" alt="Contact">Contact</a>
         <a href="privacy-policy.html" alt="Privacy Policy">Privacy Policy</a>
-
-        <p class="footer-copyright">&copy; David’s Barbeque 2022</p>
+        <p class="footer-disclaimer">This site was created for a class assignment only.</p>
     </div>
 </footer>
 OUTPUT;
@@ -145,19 +143,16 @@ $threeBlockHighlight= <<<OUTPUT
                         <img src="img/button-block-menu.jpg" alt="beef brisket">
                         <div class="gradient-b2t"></div>
                         <p>See our menu</p>
-                        <div class="dark-hover"></div>
                     </a>
                     <a class="btn-block" href="catering.html" alt="Menu">
                         <img src="img/button-block-catering.jpg" alt="beef brisket">
                         <div class="gradient-b2t"></div>
                         <p>Order catering</p>
-                        <div class="dark-hover"></div>
                     </a>
                     <a class="btn-block" href="our-story.html" alt="Menu">
                         <img src="img/button-block-our-story.jpg" alt="beef brisket">
                         <div class="gradient-b2t"></div>
                         <p>Get to know us</p>
-                        <div class="dark-hover"></div>
                     </a>
                 </div>
             </section>

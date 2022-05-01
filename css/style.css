@@ -40,7 +40,7 @@ body {
     color: var(--white);
 }
 
-section {
+section, .wrapper {
     padding: 20px 40px;
     margin-left: auto;
     margin-right: auto;
@@ -126,7 +126,7 @@ p {
         font-size: 24px;
     }
 
-    section {
+    section, .wrapper {
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -138,6 +138,7 @@ p {
 
 a:link, a:active, a:visited {
     color: var(--primary);
+    transition: color 250ms ease;
 }
 
 a:hover {
@@ -163,18 +164,23 @@ a.btn-primary, a.btn-secondary, .btn-primary, .btn-secondary {
 a.btn-primary, .btn-primary {
     background-color: var(--primary);
     color: var(--white);
+    transition: color 250ms ease;
+    transition: background-color 250ms ease;
 }
 
 a.btn-secondary, .btn-secondary {
     background-color: var(--white);
     border: 1px solid var(--primary);
     color: var(--primary);
+    transition: color 250ms ease;
+    transition: background-color 250ms ease;
 }
 
-a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active, a.btn-secondary:hover, a.btn-secondary:focus, a.btn-secondary:active, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+a.btn-primary:hover, a.btn-secondary:hover, .btn-primary:hover, .btn-secondary:hover {
     background-color: var(--secondary);
     border: 1px solid transparent;
     color: var(--white);
+    cursor: pointer;
 }
 
 a.btn-primary:focus, a.btn-secondary:focus, .btn-primary:focus, .btn-secondary:focus {
@@ -240,18 +246,22 @@ div.headernav {
     padding: 10px;
 }
 
-.nav-logo-desktop {
-    display: none;
-}
-
-.nav-logo-mobile {
-    height: 39px;
+.nav-logo {
+    height: 30px;
     width: auto;
 }
 
-.nav-logo-desktop:hover {
+.nav-logo:hover {
     animation: wiggle 600ms;
 }
+
+#nav-logo-link {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+#nav-logo-link:hover > .nav-logo { animation: wiggle 600ms; }
 
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
@@ -436,8 +446,12 @@ p.social-icons {
     font-size: 30px;
 }
 
-.footer-copyright {
+p.footer-phone i {
+    font-size: 25px;
+}
+.footer-disclaimer {
     margin-top: 40px;
+    text-align: center;
 }
 
 /* footer end */
@@ -499,20 +513,26 @@ p.social-icons {
     font-size: 34px;
     text-align: center;
     line-height: 1.1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
 }
 
-.btn-block p.hovered {
+.btn-block p:hover {
     z-index: 9;
     text-decoration: underline;
     text-decoration-color: var(--secondary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527));
 }
 
-.btn-block .gradient-b2t, .btn-block .dark-hover {
+.btn-block .gradient-b2t {
     border-radius: 7px;
-}
-
-.btn-block div:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527)) 
 }
 
 
@@ -1243,8 +1263,8 @@ tbody tr:nth-of-type(even) {
     height: 200px;
 }
 
-.merch-hero p{
-color: var(--light);
+.merch-hero h1{
+color: var(--white);
 }
 
 .merch-item-container{
@@ -1255,6 +1275,18 @@ color: var(--light);
     align-items: center;
     align-content: center;
     text-align: center;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: var(--light);
+}
+
+.merch-item-container p, .merch-item-container .merch-cost-container p {
+    padding: 10px;
+    margin: 0;
+}
+
+.merch-item-container a.order-button {
+    margin-bottom: 10px;
 }
 
 .merch-item-container img{
@@ -1440,3 +1472,41 @@ height: 100%;
 }
 
 /* contact end */
+
+/* calendar page */
+
+.host-event {
+    padding: 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    border-radius: 7px;
+}
+
+.host-event h2 {
+    color: var(--white);
+}
+
+.host-event p a {
+    color: var(--white);
+}
+
+.host-event p a:hover {
+    color: var(--dark);
+}
+
+@media only screen and (min-width: 992px) {
+    .host-event {
+        padding: 40px 80px;
+    }
+}
+
+/* calendar page end */
+
+/* privacy policy */
+
+.privacy-policy h2, .privacy-policy h3, .privacy-policy h4 {
+    text-align: left;
+}
+
+/* privacy policy end */
