@@ -55,10 +55,10 @@ $navHome = "<header>
         <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
-            <a class='nav-item' href='catering.html' title='Catering'>Catering</a>
+            <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
             <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
             <a class='nav-item' href='store.php' title='Store'>Store</a>
-            <a class='nav-item' href='contact.html' title='Contact'>Contact</a>
+            <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
             <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
             <i class='fas fa-times navbar-close' id='navbar-close'></i>
         </div>
@@ -75,10 +75,10 @@ $nav = "<header>
         <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
-            <a class='nav-item' href='catering.html' title='Catering'>Catering</a>
+            <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
             <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
             <a class='nav-item' href='store.php' title='Store'>Store</a>
-            <a class='nav-item' href='contact.html' title='Contact'>Contact</a>
+            <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
             <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
             <i class='fas fa-times navbar-close' id='navbar-close'></i>
         </div>
@@ -96,7 +96,7 @@ $footer = <<<OUTPUT
             <p>2224 W Park Row Dr<br>Pantego, TX 76013</p>
         </div>
         <p>Tues - Sat: 11 a.m. - 8 p.m.</p>
-        <a href="menu.html" alt="Order online" class="btn-primary">Order online</a>
+        <a href="menu.php" alt="Order online" class="btn-primary">Order online</a>
     </div>
 
     <div class="main-footer-container">
@@ -104,11 +104,11 @@ $footer = <<<OUTPUT
         <p class="social-icons"><a href="https://www.facebook.com/profile.php?id=115719185124026" alt="David's Barbeque Facebook"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/" alt="Twitter"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/explore/locations/4724175/united-states/pantego-texas/davids-barbecue/" alt="Instagram"><i class="fab fa-instagram"></i></a></p>
 
         <h4>Quick Links</h4>
-        <a href="menu.html" alt="Menu">Menu</a>
-        <a href="catering.html" alt="Catering">Catering</a>
-        <a href="our-story.html" alt="Our Story">Our Story</a>
-        <a href="store.html" alt="Store">Store</a>
-        <a href="contact.html" alt="Contact">Contact</a>
+        <a href="menu.php" alt="Menu">Menu</a>
+        <a href="catering.php" alt="Catering">Catering</a>
+        <a href="our-story.php" alt="Our Story">Our Story</a>
+        <a href="store.php" alt="Store">Store</a>
+        <a href="contact.php" alt="Contact">Contact</a>
         <a href="privacy-policy.php" alt="Privacy Policy">Privacy Policy</a>
 
         <p class="footer-copyright">&copy; David’s Barbeque 
@@ -157,13 +157,13 @@ $threeBlockHighlight= <<<OUTPUT
                         <p>See our menu</p>
                         <div class="dark-hover"></div>
                     </a>
-                    <a class="btn-block" href="catering.html" alt="Menu">
+                    <a class="btn-block" href="catering.php" alt="Menu">
                         <img src="img/button-block-catering.jpg" alt="beef brisket">
                         <div class="gradient-b2t"></div>
                         <p>Order catering</p>
                         <div class="dark-hover"></div>
                     </a>
-                    <a class="btn-block" href="our-story.html" alt="Menu">
+                    <a class="btn-block" href="our-story.php" alt="Menu">
                         <img src="img/button-block-our-story.jpg" alt="beef brisket">
                         <div class="gradient-b2t"></div>
                         <p>Get to know us</p>
@@ -197,7 +197,7 @@ $calenderElement= <<<OUTPUT
                             <p class="event-location"><i class="fas fa-map-marker"></i> David's Dining Room</p>
                         </div>
                     </div>
-                    <a class="btn-secondary" href="calendar.html" alt="community calendar">View all events</a>
+                    <a class="btn-secondary" href="calendar.php" alt="community calendar">View all events</a>
                 </div>
             </section>
 OUTPUT;
@@ -207,7 +207,7 @@ $merchElement= <<<OUTPUT
                     <img src="img/merch-feature.jpg" alt="barbeque sauce">
                     <div class="gradient-t2b"></div>
                     <h3>Barbeque sauce, accessories, and t-shirts for the whole family.</h3>
-                    <a class="btn-primary" href="store.html" alt="Store">Shop merch</a>
+                    <a class="btn-primary" href="store.php" alt="Store">Shop merch</a>
                 </div>
             </section>
 OUTPUT;
