@@ -23,7 +23,7 @@ function printArray(array $id){
 	return $a;}
 	
 
-if (isset($_POST['submit'])) { 
+if (isset($_POST['getQuote'])) { 
     
     foreach($expected as $value){
         $input = $_POST[$value];
@@ -67,7 +67,7 @@ else{$output = "<p> Go to form <p>";}
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Review your order - David's Barbeque</title>
+      <title>Review your information - David's Barbeque</title>
       <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
       <link href="css/style.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
@@ -77,14 +77,14 @@ else{$output = "<p> Go to form <p>";}
             <?php echo $nav; ?>
 
             <section>
-                <h1>Review your order</h1>
+                <h1>Review your information</h1>
                 
                 <table>
                     <?php echo $output;?>
                 </table>
                 
 
-                <a class="btn btn-primary" href="thankyou.php">Looks Good!</a>
+                <a class="btn btn-primary" href="index.php">Looks Good!</a>
                 <a class="btn btn-primary" href="catering.php">Back</a>
             </section>
 
