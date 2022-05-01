@@ -60,7 +60,7 @@ $navHome = "<header>
             <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
             <a class='nav-item' href='store.php' title='Store'>Store</a>
             <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
-            <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
+            <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order online</a>
             <i class='fas fa-times navbar-close' id='navbar-close'></i>
         </div>
     </div>
