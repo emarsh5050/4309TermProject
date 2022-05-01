@@ -15,7 +15,8 @@
         <?php echo $nav; ?>
         <main>
             <div class="merch-hero">
-                <img src="img/merch-feature.jpg" alt="beef brisket">
+                <div class="merch-hero-overlay"></div>
+                <img src="img/foodTable.JPG" alt="beef brisket">
                 <p class="h1">Take a piece of David's home</p>
             </div>
             <div class="body-items-contaier">
