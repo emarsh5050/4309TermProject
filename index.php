@@ -9,6 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>David's Barbeque</title>
+    <meta name="description" content="Order online, view our menu, find an upcoming event, and learn more about our restaurant.">
+    <meta name="keywords" content="menu, barbeque, order, calendar, events">
     <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>

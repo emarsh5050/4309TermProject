@@ -1,49 +1,14 @@
 <?php
    include ('shared.php'); ?>
-<!--PROFESSOR JANG, while I know that the use of embedded style is generally unacceptable in this instance the privacy policy and associated styles were taken from a generator and I wasn't sure if changing them would be appropriate.-->
-<style>
-  [data-custom-class='body'], [data-custom-class='body'] * {
-          background: transparent !important;
-        }
-[data-custom-class='title'], [data-custom-class='title'] * {
-          font-family: Arial !important;
-font-size: 26px !important;
-color: #000000 !important;
-        }
-[data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
-          font-family: Arial !important;
-color: #595959 !important;
-font-size: 14px !important;
-        }
-[data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
-          font-family: Arial !important;
-font-size: 19px !important;
-color: #000000 !important;
-        }
-[data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
-          font-family: Arial !important;
-font-size: 17px !important;
-color: #000000 !important;
-        }
-[data-custom-class='body_text'], [data-custom-class='body_text'] * {
-          color: #595959 !important;
-font-size: 14px !important;
-font-family: Arial !important;
-        }
-[data-custom-class='link'], [data-custom-class='link'] * {
-          color: #3030F1 !important;
-font-size: 14px !important;
-font-family: Arial !important;
-word-break: break-word !important;
-        }
-</style>
 
 <!doctype html>
 <html>
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>David's Privacy Policy</title>
+      <title>Privacy Policy - David's Barbeque</title>
+      <meta name="description" content="Find out how we protect your personal data and your privacy.">
+      <meta name="keywords" content="privacy, security, personal data, data">
       <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
       <link href="css/style.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
