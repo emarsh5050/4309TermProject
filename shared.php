@@ -109,7 +109,7 @@ $footer = <<<OUTPUT
         <a href="our-story.html" alt="Our Story">Our Story</a>
         <a href="store.html" alt="Store">Store</a>
         <a href="contact.html" alt="Contact">Contact</a>
-        <a href="privacy-policy.html" alt="Privacy Policy">Privacy Policy</a>
+        <a href="privacy-policy.php" alt="Privacy Policy">Privacy Policy</a>
 
         <p class="footer-copyright">&copy; David’s Barbeque 
 OUTPUT;
