@@ -75,10 +75,10 @@ $nav = "<header>
         <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
-            <a class='nav-item' href='catering.php' title='Catering'>Catering</a>
+            <a class='nav-item' href='catering.html' title='Catering'>Catering</a>
             <a class='nav-item' href='our-story.php' title='Our Story'>Our Story</a>
             <a class='nav-item' href='store.php' title='Store'>Store</a>
-            <a class='nav-item' href='contact.php' title='Contact'>Contact</a>
+            <a class='nav-item' href='contact.html' title='Contact'>Contact</a>
             <a class='btn-primary nav-order-button' href='menu.php' alt='order online'>Order Online</a>
             <i class='fas fa-times navbar-close' id='navbar-close'></i>
         </div>
@@ -111,10 +111,14 @@ $footer = <<<OUTPUT
         <a href="contact.html" alt="Contact">Contact</a>
         <a href="privacy-policy.html" alt="Privacy Policy">Privacy Policy</a>
 
-        <p class="footer-copyright">&copy; David’s Barbeque 2022</p>
-    </div>
-</footer>
+        <p class="footer-copyright">&copy; David’s Barbeque 
 OUTPUT;
+
+$footer.= date("Y"); 
+
+$footer.= "</p>
+    </div>
+</footer>";
 
 //coupon options
 

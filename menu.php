@@ -1,5 +1,67 @@
 <?php
    include ('shared.php');
+   $lunchMenu = <<<OUTPUT
+                  <button type="button" class="collapsible lunch-menu">Lunch Menu</button>
+               <div class="content">
+                  <div class="entry-container">
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Beef Brisket Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$10.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Pork Ribs Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$7.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Turkey Breast Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$6.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Vegan Jackfruit Pulled Pork Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$6.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Ham Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$6.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                     <div class="entry">
+                        <div class="menu-item">
+                           <p>Sausage Platter</p>
+                        </div>
+                        <div class="cost">
+                           <p>$6.99</p>
+                        </div>
+                        <a class="btn btn-primary order-button" onclick="changeStyleBlock()">Add to cart</a>
+                     </div>
+                  </div>
+               </div>
+OUTPUT;
+
    ?>
 <!doctype html>
 <html>
@@ -18,6 +80,13 @@
          <div class="wrapper">
             <div class="menu-wrapper-order">
                <h2>Menu</h2>
+                <?php 
+                date_default_timezone_set("America/Chicago");
+                $H = date("H");
+                if ($H > 9 and $H < 15) {
+                    echo $lunchMenu;
+                }
+               ?>
                <button type="button" class="collapsible meat-by-the-lb">Meats by the pound</button>
                <div class="content">
                   <div class="entry-container">
@@ -123,7 +192,7 @@
                   <div class="entry-container">
                      <div class="entry">
                         <div class="menu-item">
-                           <p>Jalapeño Peppers </p>
+                           <p>Jalape単o Peppers </p>
                         </div>
                         <div class="cost">
                            <p>$0.10</p>
