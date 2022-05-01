@@ -21,7 +21,7 @@
         <main>
 
             <div class="hero-container">
-                <img src="img/home-hero.jpg" alt="Person cutting barbeque meat">
+                <img src="img/home-hero2.jpg" alt="Person cutting barbeque meat">
                 <div class="gradient-t2b"></div>
                 <h1 class="hero-text">Barbeque done right.<br>Since 1910.</h1>
                 <a class="btn-primary" href="menu.php" alt="order online">Order Online</a>

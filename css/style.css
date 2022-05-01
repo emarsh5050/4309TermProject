@@ -249,6 +249,7 @@ div.headernav {
 .nav-logo {
     height: 30px;
     width: auto;
+    margin-right: 5px;
 }
 
 .nav-logo:hover {
@@ -259,6 +260,7 @@ div.headernav {
     display: flex;
     align-items: center;
     padding-left: 0;
+    font-family: 'Alfa Slab One', serif;
 }
 
 #nav-logo-link:hover > .nav-logo { animation: wiggle 600ms; }
@@ -339,14 +341,8 @@ a.nav-item {
         justify-content: flex-start;
     }
 
-    .navbar-open, .nav-logo-mobile {
+    .navbar-open {
         display: none;
-    }
-
-    .nav-logo-desktop {
-        display: block;
-        height: 30px;
-        width: auto;
     }
 
     .navbar {

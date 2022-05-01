@@ -50,8 +50,7 @@ $navHome = "<header>
     <p>This page is produced as a class project</p>
     </div>
     <div class='headernav home'>
-        <a href='index.php' title='Home'><img class='nav-logo-mobile' src='img/logo-white.png' alt='David's Barbeque logo'></a>
-        <a href='index.php' title='Home'><img class='nav-logo-desktop' src='img/logo-flame.svg' alt='David's Barbeque icon'></a>
+        <a id='nav-logo-link' class='nav-item' href='index.php' title='Home'><img class='nav-logo' src='img/logo-flame.svg' alt='David's Barbeque icon'>DAVID'S</a>
         <button class='navbar-open' id='navbar-open' type='button'><i class='fas fa-bars'></i></button>
         <div class='navbar' id='main-navigation'>
             <a class='nav-item' href='menu.php' title='Menu'>Menu</a>
