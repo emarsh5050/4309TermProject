@@ -1,12 +1,13 @@
 <?php
-include ('shared.php'); 
+include ('shared.php');
 ?>
 
+<!DOCTYPE HTML>
 <HTML>
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Thank you!</title>
+      <title>Success!</title>
       <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
       <link href="css/style.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
@@ -14,9 +15,10 @@ include ('shared.php');
    <body>
         </main>
             <?php echo $nav; ?>
-            
             <section>
-                <h1>Thank you for your order!</h1>
+                <h1>Success!</h1>
+                <p>Thank you for reaching out to us. We'll get back to you as soon as we can. In the meantime, please visit our home page, or check out some of the links below.</p>
+                <a class="btn-primary" href="index.php" alt="go back home">Go back home</a><br>
                 <div class="btn-block-container">
                     <a class="btn-block" href="our-story.html" alt="Menu">
                         <img src="img/button-block-our-story.jpg" alt="David's employee cooking meat">
@@ -35,11 +37,11 @@ include ('shared.php');
                     </a>
                 </div>
             </section>
-            
-            <?php echo $Newsletter; ?>
+
             
             <footer><?php echo $footer; ?></footer>
         </main>
+
         <script src="js/app.js"></script>
     </BODY>
 </HTML>

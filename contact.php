@@ -36,7 +36,7 @@
                         <h2>Get in touch with us</h2>
                         <p>Fill out the form below, or give us a call.</p>
                         <a href="tel:8172619998"><i class="fas fa-phone"></i> 817-261-9998</a>
-                        <form class="general-form">
+                        <form class="general-form" action="contact-success.php" method="post">
                                 <label for="name">Name</label><input type="text" id="name" name="name" placeholder="Name">
                                 <label for="email">Email address</label><input type="email" id="email" name="email" placeholder="Email address">
                                 <label for="phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="Phone number">

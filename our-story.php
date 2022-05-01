@@ -110,6 +110,7 @@
             </section>
 
         </main>
+        <script src="js/app.js"></script>
     </body>
 
 <?php echo $footer; ?>

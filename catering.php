@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Our Story - David's Barbeque</title>
+        <title>Catering - David's Barbeque</title>
         <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
         <link href="css/style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/011c7b1de4.js" crossorigin="anonymous"></script>
@@ -20,6 +20,7 @@
                 <h1>Catering</h1>
                 <div class="catering-container">
                     <p>David's Barbeque offers catering for corporate parties, school and graduation events, weddings, and family events. Please fill out the form below to receive a quote for your event. Call us at <a href="tel:8172619998">817-261-9998</a> with any questions.</p>
+                    <a href="tel:8172619998" class="btn-primary">Give us a call&nbsp;&nbsp;<i class="fas fa-phone"></i></a>
                     <div class="catering-pictures">
                         <div class="catering-img-container">
                             <img alt="barbeque catering" src="img/catering.jpg">
@@ -32,7 +33,7 @@
                         </div>
                     </div>
                     <div class="catering-info-container">
-                        <form class="general-form">
+                        <form class="general-form" action="review-catering.php" method="post">
                             <h3>Get a quote</h3>
                             <fieldset>
                                 <legend>Personal information</legend>

@@ -22,10 +22,12 @@ if (isset($_POST["email"]) && !empty($_POST["email"])){
 	if (isset($_COOKIE["booleanSubmit"]) && !empty($_COOKIE["booleanSubmit"])){
         $Newsletter = 
         <<<OUTPUT
-        <p class="h3">Thanks for signing up for our updates!<p><form method="post">
+        <div class="email-newsletter-container">
+        <h3>Thanks for signing up for our updates!<h3><form method="post">
         <form>
-            <input type="submit" name="reset" class="btn-primary" value="Sign Up Again" />
+            <input type="submit" name="reset" class="btn-secondary" value="Sign up again" />
         </form>
+        </div>
 OUTPUT;
 	} else {
         $Newsletter = <<<OUTPUT
