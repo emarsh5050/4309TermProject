@@ -1480,6 +1480,10 @@ input[type=text]#description {
     align-items: center;
 }
 
+input[type=text]#comment {
+    height: 150px;
+}
+
 .contact-hours {
     background-color: var(--light);
     width: 100%;

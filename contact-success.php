@@ -43,5 +43,5 @@ include ('shared.php');
         </main>
 
         <script src="js/app.js"></script>
-    </BODY>
-</HTML>
+</body>
+</html>

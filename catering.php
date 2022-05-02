@@ -58,9 +58,8 @@
                     </div>
                 </div>
         </main>
+        <script src="js/app.js"></script>
     </body>
 
     <?php echo $footer; ?>
-
-    <script src="app.js"></script>
 </html>
