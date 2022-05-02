@@ -720,10 +720,11 @@ p.footer-phone i {
 
 /*order sidebar*/
     .order-sidebar{
-        position: absolute;
-        right: 1.75vw;
+        flex:1;
+        position: relative;
+        margin-right: 0;
+        padding-left: 40px;
         margin-top: 42px;
-        width: 30vw;
         display: block;
     }
     
