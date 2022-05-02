@@ -9,18 +9,6 @@ $expName = array('First name', 'Last name', 'Email','Phone number', 'Date', 'Num
 
 $missing = array();
 
-function printArray(array $id){ 	
-    $a = "";
-    
-	    $a = "<ul>";
-        foreach ($id as &$value) {
-            $a .= "<li>";
-            $a .= $value;
-            $a .= "</li>";
-        }
-        $a .= "</ul>";
-	
-	return $a;}
 	
 
 if (isset($_POST['getQuote'])) { 
