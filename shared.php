@@ -171,7 +171,7 @@ OUTPUT;
 
 $calenderElement= <<<OUTPUT
             <section>
-                <h2>Community Calendar</h2>
+                <<h2>Join Our Community</h2>
                 <div class="calendar-container">
                     <div class="event-container">
                         <div class="event-day">
